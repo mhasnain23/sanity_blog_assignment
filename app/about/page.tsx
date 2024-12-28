@@ -6,13 +6,15 @@ const AboutPage = () => {
       <Image
         src="https://media.istockphoto.com/id/1924137135/photo/online-blog-search-learning-work-internet-freelance-business-post-website-online-homepage.jpg?s=1024x1024&w=is&k=20&c=4dGL31lbpt61qk1sDXCpLm7PtZH7L6UI_2fekqS7GqQ="
         alt="Random Banner"
+        priority
+        quality={100}
         width={800}
         height={400}
-        className="w-full max-w-4xl rounded-lg shadow-lg mb-12 hover:opacity-90 transition-opacity"
+        className="w-full max-w-4xl rounded-lg shadow-lg mb-12 hover:opacity-90 transition-opacity cursor-pointer"
       />
 
       <div className="max-w-3xl text-center px-4">
-        <h1 className="text-4xl font-bold mb-6 text-gray-900 hover:text-indigo-600 transition-colors">
+        <h1 className="text-4xl font-extrabold mb-6 cursor-pointer text-gray-900 hover:text-indigo-600 transition-colors">
           About Our Blog Platform
         </h1>
 
@@ -23,7 +25,7 @@ const AboutPage = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="p-6 hover:bg-gray-50 rounded-lg transition-colors">
+          <div className="p-6 hover:bg-gray-100 rounded-lg transition-colors cursor-pointer">
             <h3 className="text-xl font-semibold mb-3 text-gray-900 hover:text-indigo-600">
               Dynamic Content
             </h3>
@@ -32,7 +34,7 @@ const AboutPage = () => {
             </p>
           </div>
 
-          <div className="p-6 hover:bg-gray-50 rounded-lg transition-colors">
+          <div className="p-6 hover:bg-gray-100 rounded-lg transition-colors cursor-pointer">
             <h3 className="text-xl font-semibold mb-3 text-gray-900 hover:text-indigo-600">
               Responsive Design
             </h3>
@@ -41,7 +43,7 @@ const AboutPage = () => {
             </p>
           </div>
 
-          <div className="p-6 hover:bg-gray-50 rounded-lg transition-colors">
+          <div className="p-6 hover:bg-gray-100 rounded-lg transition-colors cursor-pointer">
             <h3 className="text-xl font-semibold mb-3 text-gray-900 hover:text-indigo-600">
               Rich Media Support
             </h3>
