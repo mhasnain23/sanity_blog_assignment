@@ -19,13 +19,7 @@ type Blog = {
   };
 };
 
-interface Props {
-  params: {
-    id: string;
-  };
-}
-
-const BlogDetailsPage = async ({ params }: Props) => {
+const BlogDetailsPage = async ({ params }: { params: any }) => {
   const { id } = await params;
   const query = `*[_type == "blog" && _id == $id][0]`;
   const blog: Blog = await client.fetch(query, { id });
